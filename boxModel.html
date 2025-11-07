@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .bishes {
+        /* Default behavior */
+        box-sizing: content-box;
+        width: 200px;
+        padding: 20px;
+        border: 5px solid #ccc;
+       
+        /* Total width: 200 + 40 + 10 = 250px */
+      }
+      .jpt {
+        /* More intuitive */
+        box-sizing: border-box;
+        width: 200px;
+        padding: 20px;
+        border: 5px solid #ccc;
+        text-align: center;
+    
+        /* Total width: exactly 200px */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This is box</h1>
+
+    <div class="bishes">Hello my name is bishes</div>
+    <div class="jpt">Box</div>
+  </body>
+</html>
