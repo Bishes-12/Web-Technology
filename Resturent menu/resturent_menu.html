@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Bites Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+    }
+    header {
+      text-align: center;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px;
+    }
+    #header-img {
+      width: 120px;
+      border-radius: 50%;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #ffcc00;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    article {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: white;
+    }
+    article img {
+      width: 150px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 10px;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="number"], textarea {
+      width: 100%;
+      padding: 5px;
+    }
+    input[type="submit"] {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #ffcc00;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img id="header-img" src="https://cdn.pixabay.com/photo/2017/06/02/18/24/pizza-2362038_1280.jpg" alt="Restaurant Logo">
+    <h1>Galaxy Bites</h1>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#order-form">Order Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Menu Section -->
+    <section id="menu">
+      <h2>Menu</h2>
+
+      <article>
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="Cosmic Burger">
+        <h3>Cosmic Burger</h3>
+        <p>A juicy grilled beef burger topped with cheese, lettuce, and our special galaxy sauce. <i>$8.99</i></p>
+      </article>
+
+      <article>
+        <img src="https://cdn.pixabay.com/photo/2017/08/07/22/36/pasta-2609645_1280.jpg" alt="Milky Way Pasta">
+        <h3>Milky Way Pasta</h3>
+        <p>Creamy Alfredo pasta sprinkled with parmesan and herbs. <i>$10.50</i></p>
+      </article>
+
+      <article>
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/pizza-1238247_1280.jpg" alt="Galaxy Pizza">
+        <h3>Galaxy Pizza</h3>
+        <p>Cheesy delight topped with pepperoni, olives, and star-shaped mushrooms. <i>$12.00</i></p>
+      </article>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order-form">
+      <h2>Place Your Order</h2>
+      <form>
+        <label for="burger">Cosmic Burger Quantity:</label>
+        <input type="number" id="burger" name="burger" min="0" value="0">
+
+        <label for="pasta">Milky Way Pasta Quantity:</label>
+        <input type="number" id="pasta" name="pasta" min="0" value="0">
+
+        <label for="pizza">Galaxy Pizza Quantity:</label>
+        <input type="number" id="pizza" name="pizza" min="0" value="0">
+
+        <h3>Sides</h3>
+        <label><input type="checkbox" name="sides" value="fries"> Fries</label>
+        <label><input type="checkbox" name="sides" value="salad"> Green Salad</label>
+        <label><input type="checkbox" name="sides" value="drink"> Soft Drink</label>
+
+        <h3>Delivery Options</h3>
+        <label><input type="radio" name="delivery" value="pickup" checked> Pickup</label>
+        <label><input type="radio" name="delivery" value="home"> Home Delivery</label>
+
+        <label for="special">Special Requests:</label>
+        <textarea id="special" name="special" rows="4" placeholder="Any special instructions..."></textarea>
+
+        <input type="submit" value="Go To Checkout">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love by <b>BishesSomai</b></p>
+  </footer>
+</body>
+</html>
