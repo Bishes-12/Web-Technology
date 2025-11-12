@@ -1,0 +1,187 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container div{
+            width: 400px;
+            height: 600px;
+            
+
+  /* display: grid;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap; */
+        }
+ .container{ display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+   
+            
+}
+    .box1 {
+        background-color:red;
+    }
+    .box2{
+        background-color: blue;
+    }
+    .box3{
+        background-color: violet;
+    }
+    .box4{
+        background-color: pink;
+    }
+    .box5{
+        background-color: yellow;
+    }
+    .box6{
+        background-color: aqua;
+    }.box7{
+        background-color: green;
+    }
+    .box8{
+        background-color: orange;
+    }
+     .box9{
+        background-color: brown;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <link rel="stylesheet" href="Flex.css">
+    <title>Document</title>
+</head>
+<body>
+ <style>
+  @media(max-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }  
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      gap: 10px;
+        width: 50vw;
+        height: 70vh;
+        margin: auto;
+        border : 2px solid black;
+        padding : 10px; 
+    }
+    div [inside] {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+    }
+    .item1 {
+      background-color: lightcoral;
+    
+      
+           
+    }   
+    .item2 {
+      background-color: lightblue;
+    
+      
+    
+    }
+    .item3 {
+      background-color: lightgreen;
+      
+      
+      
+    }
+    .item4 {
+      background-color: lightpink;
+
+      
+    }
+    .item5 {
+      background-color: lightyellow;
+
+    
+    }
+    .item6 {
+      background-color: lightgray;
+
+    
+    }
+    .item7 {
+      background-color: lightseagreen;
+
+      
+    }
+    .item8 {
+      background-color: lightgoldenrodyellow;
+      
+
+    }
+    .item9 {
+      background-color: rgb(31, 225, 225);
+      
+      
+    }
+     .item10 {
+      background-color: rgb(35, 100, 51);
+      
+      
+    }
+     .item11 {
+      background-color: rgb(77, 211, 63);
+      
+      
+    }
+     .item12 {
+      background-color: rgb(225, 50, 31);
+  
+      
+    }
+
+ </style>
+
+    <div class="container">
+        <div inside class="item1">1</div>
+        <div inside class="item2">2</div>
+        <div inside class="item3">3</div>
+        <div inside class="item4">4</div>
+        <div inside class="item5">5</div>
+        <div inside class="item6">6</div>
+        <div inside class="item7">7</div>
+        <div inside class="item8">8</div>
+        <div inside class="item9">9</div>
+        <div inside class="item10">C</div>
+        <div inside class="item11">0</div>
+        <div inside class="item12">X</div>
+         
+</body>
+</html>
