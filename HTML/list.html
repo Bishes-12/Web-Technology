@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .emoji::before {
+            content: "💻 ";
+
+        }
+        .emoji::after{
+            content: "😒";
+        }
+        .emoji::marker{
+            color: red;
+        }
+        .focus:focus{
+            border: 2px solid red;
+            outline: none;
+        }
+        .focus:hover{
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .anchor:link{
+            text-decoration: none;
+            color: green;
+        }
+        .anchor:visited{
+            color: purple;
+        }
+        .anchor:active{
+            color: red;
+        }
+        .selection::selection{
+            background-color: yellow;
+            color: white;
+        }
+        .selection::first-letter{
+            color:aqua ;
+            font-size: 200%;
+        }
+        </style>
 </head>
 <body>
     <ul>
-    <li>HTML</li>
+    <li class="emoji">HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
 </ul>
@@ -44,5 +82,12 @@
 
 </ol>
 </dl>
+<a href="example.com" alt="for example" class="anchor">This is an example link</a><br>
+<input type="text" placeholder="Enter your name" class="focus"><br>
+<input type="text" placeholder="Enter your name" class="focus"><br>
+<input type="text" placeholder="Enter your name" class="focus"><br>
+<input type="text" placeholder="Enter your name" class="focus"><br>
+<input type="text" placeholder="Enter your name" class="focus"><br>
+<p class="selection">Click outside the input box to see the effect.</p>
 </body>
 </html>
